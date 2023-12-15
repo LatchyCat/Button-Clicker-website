@@ -1,16 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Button Clicker</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div class="container"></div>
 
-    <div class="left"></div>
-    
-<script src="script.js"></script>
+<body>
+    <div class="topNav">
+        <h1 class="title">Orinary</h1>
+        <input class="searchText" type="text" placeholder="Search...">
+        <button class="btnTitle">Login</button>
+    </div>
+
+    <div class="mainBody">
+
+        <div class="bodyLeft">
+            <div class="infoCard">
+                <div class="infoBoxLeft">
+                    <h2>Ninja</h2>
+                    <p class="nounItal">noun</p>
+                    <p>Plural: ninjas</p>
+                    <!-- sum up numbers whenever the BTN is clicked -->
+                    <button class="infoButton" onclick="sumFunc(this)">Likes</button>
+                </div>
+                <div class="infoBoxRight">
+                    <p>By the power of graySkull <a href="https://www.youtube.com/watch?v=maTTZ8bW0-Q">Heman</a> some other text <a href="https://www.youtube.com/watch?v=maTTZ8bW0-Q">Skill issue</a></p>
+                </div>
+            </div>
+            <div class="infoCard">
+                <div class="infoBoxLeft">
+                    <h2>Ninja</h2>
+                    <p class="nounItal">noun</p>
+                    <p>Plural: ninjas</p>
+                    <button class="infoButton" onclick="sumFunc(this)">Likes</button>
+                </div>
+                <div class="infoBoxRight">
+                    <p>By <a href="https://www.youtube.com/watch?v=maTTZ8bW0-Q">Heman</a> the power of <a href="https://www.youtube.com/watch?v=maTTZ8bW0-Q">Skill issue</a> graySkull some other text</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="bodyRight">
+            <div class="defineCard">
+                <p>Orinary is defined by you</p>
+                <!-- Remove the BTN when clicked on -->
+                <button class="greenBtn" onclick="removalFunc(this)">Add Definition</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
